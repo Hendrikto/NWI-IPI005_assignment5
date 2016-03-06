@@ -7,7 +7,6 @@ package assignment5;
  * @author Jasper Haasdijk // s4449754
  */
 public class Assignment5 {
-
     /**
      * Entry point.
      *

@@ -59,6 +59,11 @@ public class MeerkeuzeVraag extends Vraag {
         this.options = options;
     }
 
+    /**
+     * Get a String representation of this question.
+     *
+     * @return A String representation of this question
+     */
     @Override
     public String toString () {
         StringBuilder sb = new StringBuilder();
@@ -70,6 +75,12 @@ public class MeerkeuzeVraag extends Vraag {
         return sb.toString();
     }
 
+    /**
+     * Get an alphabet based index from a number.
+     *
+     * @param a The index as a number
+     * @return The index as a letter
+     */
     private static String getLetter (int a) {
         return String.valueOf((char)('a' + a));
     }

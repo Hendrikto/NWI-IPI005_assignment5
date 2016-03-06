@@ -11,6 +11,13 @@ public abstract class Vraag {
     protected final int weight;
     private final String solution;
 
+    /**
+     * Constructor method.
+     *
+     * @param question The text of the question
+     * @param answer The answer to the question
+     * @param weight The weight of the question
+     */
     public Vraag (String question, String answer, int weight) {
         this.text = question;
         this.solution = answer;
@@ -21,8 +28,14 @@ public abstract class Vraag {
         }
     }
 
-    public Vraag (String q, String solution) {
-        this(q, solution, 3);
+    /**
+     * Constructor method.
+     *
+     * @param question The text of the question
+     * @param answer The answer to the question
+     */
+    public Vraag (String question, String answer) {
+        this(question, answer, 3);
     }
 
     /**
@@ -44,11 +57,22 @@ public abstract class Vraag {
         return this.solution;
     }
 
+    /**
+     * Get a String representation of this question.
+     *
+     * @return A String representation of this question
+     */
     @Override
     public String toString () {
         return String.format("%s (weight: %d)", this.text, this.weight);
     }
 
+    /**
+     * Check if a weight is valid.
+     *
+     * @param w The weight to check
+     * @return Whether the weight is valid
+     */
     private static boolean isValidWeight (int w) {
         return w >= 1 && w <= 5;
     }
