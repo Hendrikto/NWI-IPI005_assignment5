@@ -12,6 +12,17 @@ public class OpenVraag extends Vraag {
      *
      * @param q The question
      * @param solution The answer
+     * @param weight The weight of the question
+     */
+    public OpenVraag (String q, String solution, int weight) {
+        super(q, solution, weight);
+    }
+
+    /**
+     * Constructor method.
+     *
+     * @param q The question
+     * @param solution The answer
      */
     public OpenVraag (String q, String solution) {
         super(q, solution);
