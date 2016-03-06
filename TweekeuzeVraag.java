@@ -42,6 +42,21 @@ public class TweekeuzeVraag extends MeerkeuzeVraag {
     }
 
     /**
+     * Return a duplicate of this TweekeuzeVraag.
+     *
+     * @return A duplicate of this TweekeuzeVraag
+     */
+    @Override
+    public TweekeuzeVraag duplicate () {
+        return new TweekeuzeVraag(
+                this.text,
+                this.options[0],
+                this.options[1],
+                this.solution.equals(this.options[0]) ? 0 : 1
+        );
+    }
+
+    /**
      * Get a String representation of this question.
      *
      * @return A String representation of this question

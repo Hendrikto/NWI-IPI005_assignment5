@@ -9,7 +9,7 @@ package assignment5;
 public abstract class Vraag {
     protected final String text;
     protected final int weight;
-    private final String solution;
+    protected final String solution;
 
     /**
      * Constructor method.

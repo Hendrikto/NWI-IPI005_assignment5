@@ -27,4 +27,14 @@ public class OpenVraag extends Vraag {
     public OpenVraag (String q, String solution) {
         super(q, solution);
     }
+
+    /**
+     * Return a duplicate of this OpenVraag.
+     *
+     * @return A duplicate of this OpenVraag
+     */
+    @Override
+    public OpenVraag duplicate () {
+        return new OpenVraag(this.text, this.solution, this.weight);
+    }
 }
