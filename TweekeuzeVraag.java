@@ -7,12 +7,37 @@ package assignment5;
  * @author Jasper Haasdijk // s4449754
  */
 public class TweekeuzeVraag extends MeerkeuzeVraag {
+    /**
+     * Constructor method.
+     *
+     * @param question The text of the question
+     * @param option1 The first answer option
+     * @param option2 The second answer option
+     * @param answer The index of the correct answer
+     * @param weight The weight of the question
+     */
     public TweekeuzeVraag (String question, String option1, String option2, int answer, int weight) {
         super(
                 question,
                 new String[] {option1, option2},
                 new String[] {option1, option2}[answer],
                 weight
+        );
+    }
+
+    /**
+     * Constructor method.
+     *
+     * @param question The text of the question
+     * @param option1 The first answer option
+     * @param option2 The second answer option
+     * @param answer The index of the correct answer
+     */
+    public TweekeuzeVraag (String question, String option1, String option2, int answer) {
+        super(
+                question,
+                new String[] {option1, option2},
+                new String[] {option1, option2}[answer]
         );
     }
 
