@@ -58,6 +58,15 @@ public abstract class Vraag {
     }
 
     /**
+     * Return the weight of this Vraag.
+     *
+     * @return the weight of this Vraag
+     */
+    public final int getWeight () {
+        return this.weight;
+    }
+
+    /**
      * Return a duplicate of this Vraag.
      *
      * @return A duplicate of this Vraag
