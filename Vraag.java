@@ -42,10 +42,10 @@ public abstract class Vraag {
      * Determine whether an answer is correct.
      *
      * @param s the answer to check
-     * @return whether s was the correct answer
+     * @return whether s was the correct answer (case insensitive)
      */
     public final boolean isCorrect (String s) {
-        return s.equals(this.solution);
+        return s.equalsIgnoreCase(this.solution);
     }
 
     /**
