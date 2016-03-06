@@ -1,7 +1,7 @@
 package assignment5;
 
 /**
- * A special case of a multiple choice question
+ * A special case of a multiple choice question with only two possible answers.
  *
  * @author Hendrik Werner // s4549775
  * @author Jasper Haasdijk // s4449754
@@ -41,6 +41,11 @@ public class TweekeuzeVraag extends MeerkeuzeVraag {
         );
     }
 
+    /**
+     * Get a String representation of this question.
+     *
+     * @return A String representation of this question
+     */
     @Override
     public String toString() {
         return String.format("%s / %s: %s (weight: %d)", this.options[0], this.options[1], this.text, this.weight);
