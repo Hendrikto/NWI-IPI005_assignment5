@@ -20,14 +20,14 @@ public abstract class Vraag {
             this.weight = 3;
         }
     }
-    
+
     public Vraag (String q, String solution) {
         this(q, solution, 3);
     }
 
     /**
      * Determine whether an answer is correct.
-     * 
+     *
      * @param s the answer to check
      * @return whether s was the correct answer
      */
@@ -37,8 +37,8 @@ public abstract class Vraag {
 
     /**
      * Return the correct answer.
-     * 
-     * @return 
+     *
+     * @return
      */
     public final String juisteAntwoord () {
         return this.solution;
@@ -48,7 +48,7 @@ public abstract class Vraag {
     public String toString () {
         return String.format("%s (weight: %d)", this.text, this.weight);
     }
-    
+
     private static boolean isValidWeight (int w) {
         return w >= 1 && w <= 5;
     }

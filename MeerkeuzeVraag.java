@@ -8,10 +8,10 @@ package assignment5;
  */
 public class MeerkeuzeVraag extends Vraag {
     protected final String[] options;
-    
+
     /**
      * Constructor method.
-     * 
+     *
      * @param question The text of the question
      * @param options The answer options
      * @param answer The index of the right answer in the options argument
@@ -21,10 +21,10 @@ public class MeerkeuzeVraag extends Vraag {
         super(question, getLetter(answer), weight);
         this.options = options;
     }
-    
+
     /**
      * Constructor method.
-     * 
+     *
      * @param question The text of the question
      * @param options The answer options
      * @param answer The index of the right answer in the options argument
@@ -33,10 +33,10 @@ public class MeerkeuzeVraag extends Vraag {
         super(question, getLetter(answer));
         this.options = options;
     }
-    
+
     /**
      * Constructor method.
-     * 
+     *
      * @param question The text of the question
      * @param options The answer options
      * @param answer The right answer
@@ -49,7 +49,7 @@ public class MeerkeuzeVraag extends Vraag {
 
     /**
      * Constructor method.
-     * 
+     *
      * @param question The text of the question
      * @param options The answer options
      * @param answer The right answer
@@ -58,7 +58,7 @@ public class MeerkeuzeVraag extends Vraag {
         super(question, answer);
         this.options = options;
     }
-    
+
     @Override
     public String toString () {
         StringBuilder sb = new StringBuilder();
@@ -69,7 +69,7 @@ public class MeerkeuzeVraag extends Vraag {
         }
         return sb.toString();
     }
-    
+
     private static String getLetter (int a) {
         return String.valueOf((char)('a' + a));
     }

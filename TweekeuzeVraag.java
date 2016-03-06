@@ -15,7 +15,7 @@ public class TweekeuzeVraag extends MeerkeuzeVraag {
                 weight
         );
     }
-    
+
     @Override
     public String toString() {
         return String.format("%s / %s: %s (weight: %d)", this.options[0], this.options[1], this.text, this.weight);
