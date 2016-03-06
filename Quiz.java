@@ -38,7 +38,7 @@ public class Quiz {
     }
 
     /**
-     * Announce with round we're in.
+     * Announce which round we're in.
      */
     private void announceRound () {
         System.out.println(String.format("=========\n Round %d \n=========", this.round++));
