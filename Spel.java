@@ -32,7 +32,7 @@ public class Spel implements Questionnaire {
      *
      * @param vs An Array of questions
      */
-    public Spel (Vraag[] vs) {
+    public Spel (Vraag... vs) {
         this.questions = new LinkedList<>(Arrays.asList(vs));
     }
 
