@@ -1,5 +1,7 @@
 package assignment5;
 
+import java.util.Random;
+
 /**
  * A multiple choice question where you can choose between "a", "b", "c" etc.
  *
@@ -57,6 +59,21 @@ public class MeerkeuzeVraag extends Vraag {
     public MeerkeuzeVraag (String question, String[] options, String answer) {
         super(question, answer);
         this.options = options;
+    }
+
+    /**
+     * Return a duplicate of this MeerkeuzeVraag.
+     *
+     * @return a duplicate of this MeerkeuzeVraag
+     */
+    @Override
+    public MeerkeuzeVraag duplicate () {
+        int shift = new Random().nextInt(this.options.length - 1);
+        String[] newOptions = new String[this.options.length];
+        for (int i = 0; i < this.options.length; i++) {
+            newOptions[(i + shift) % this.options.length] = this.options[i];
+        }
+        return new MeerkeuzeVraag(this.text, newOptions, getLetter((this.solution.charAt(0) - 97 + shift) % this.options.length), this.weight);
     }
 
     /**
