@@ -18,4 +18,9 @@ public interface Questionnaire {
      * Start the questionnaire.
      */
     public void start ();
+
+    /**
+     * Show information about the game.
+     */
+    public void showInfo ();
 }
