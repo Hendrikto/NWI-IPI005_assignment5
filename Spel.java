@@ -64,6 +64,7 @@ public class Spel implements Questionnaire {
             } else {
                 this.setIncorrect(v);
             }
+            System.out.println();
         }
     }
 
