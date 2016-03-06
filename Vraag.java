@@ -51,7 +51,7 @@ public abstract class Vraag {
     /**
      * Return the correct answer.
      *
-     * @return
+     * @return the correct answer
      */
     public final String juisteAntwoord () {
         return this.solution;
