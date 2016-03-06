@@ -58,6 +58,13 @@ public abstract class Vraag {
     }
 
     /**
+     * Return a duplicate of this Vraag.
+     *
+     * @return A duplicate of this Vraag
+     */
+    abstract public Vraag duplicate ();
+
+    /**
      * Get a String representation of this question.
      *
      * @return A String representation of this question
