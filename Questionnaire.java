@@ -1,5 +1,7 @@
 package assignment5;
 
+import java.util.Collection;
+
 /**
  * An interface for a questionnaire.
  *
@@ -23,4 +25,11 @@ public interface Questionnaire {
      * Show information about the game.
      */
     public void showInfo ();
+
+    /**
+     * Get the questions that have been answered incorrectly.
+     *
+     * @return The questions which have been answered incorrectly
+     */
+    public Collection<Vraag> getIncorrect ();
 }
