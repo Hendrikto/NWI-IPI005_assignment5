@@ -41,6 +41,6 @@ public class Quiz {
      * Announce which round we're in.
      */
     private void announceRound () {
-        System.out.println(String.format("=========\n Round %d \n=========", this.round++));
+        System.out.printf("=========\n Round %d \n=========\n", this.round++);
     }
 }
