@@ -14,7 +14,7 @@ public class OpenVraag extends Vraag {
      * @param solution The answer
      * @param weight The weight of the question
      */
-    public OpenVraag (String q, String solution, int weight) {
+    public OpenVraag(String q, String solution, int weight) {
         super(q, solution, weight);
     }
 
@@ -24,7 +24,7 @@ public class OpenVraag extends Vraag {
      * @param q The question
      * @param solution The answer
      */
-    public OpenVraag (String q, String solution) {
+    public OpenVraag(String q, String solution) {
         super(q, solution);
     }
 
@@ -34,7 +34,7 @@ public class OpenVraag extends Vraag {
      * @return A duplicate of this OpenVraag
      */
     @Override
-    public OpenVraag duplicate () {
+    public OpenVraag duplicate() {
         return new OpenVraag(text, solution, weight);
     }
 }
