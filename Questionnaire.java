@@ -14,22 +14,22 @@ public interface Questionnaire {
      *
      * @param v The Vraag to add.
      */
-    public void add (Vraag v);
+    void add(Vraag v);
 
     /**
      * Start the questionnaire.
      */
-    public void start ();
+    void start();
 
     /**
      * Show information about the game.
      */
-    public void showInfo ();
+    void showInfo();
 
     /**
      * Get the questions that have been answered incorrectly.
      *
      * @return The questions which have been answered incorrectly
      */
-    public Collection<Vraag> getIncorrect ();
+    Collection<Vraag> getIncorrect();
 }
