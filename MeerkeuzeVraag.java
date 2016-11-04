@@ -68,12 +68,12 @@ public class MeerkeuzeVraag extends Vraag {
      */
     @Override
     public MeerkeuzeVraag duplicate () {
-        int shift = new Random().nextInt(this.options.length - 1);
-        String[] newOptions = new String[this.options.length];
-        for (int i = 0; i < this.options.length; i++) {
-            newOptions[(i + shift) % this.options.length] = this.options[i];
+        int shift = new Random().nextInt(options.length - 1);
+        String[] newOptions = new String[options.length];
+        for (int i = 0; i < options.length; i++) {
+            newOptions[(i + shift) % options.length] = options[i];
         }
-        return new MeerkeuzeVraag(this.text, newOptions, getLetter((this.solution.charAt(0) - 97 + shift) % this.options.length), this.weight);
+        return new MeerkeuzeVraag(text, newOptions, getLetter((solution.charAt(0) - 97 + shift) % options.length), weight);
     }
 
     /**
@@ -85,8 +85,8 @@ public class MeerkeuzeVraag extends Vraag {
     public String toString () {
         StringBuilder sb = new StringBuilder();
         char index = 'a';
-        sb.append(String.format("%s (weight: %d)\n", this.text, this.weight));
-        for (String s: this.options) {
+        sb.append(String.format("%s (weight: %d)\n", text, weight));
+        for (String s: options) {
             sb.append(String.format("  %c) %s\n", index++, s));
         }
         return sb.toString();
