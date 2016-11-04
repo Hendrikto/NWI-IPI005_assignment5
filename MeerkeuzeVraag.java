@@ -76,7 +76,7 @@ public class MeerkeuzeVraag extends Vraag {
         return new MeerkeuzeVraag(
                 text,
                 newOptions,
-                getLetter((solution.charAt(0) - 97 + shift) % options.length),
+                getLetter((solution.charAt(0) - 'a' + shift) % options.length),
                 weight
         );
     }
