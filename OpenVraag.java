@@ -35,6 +35,6 @@ public class OpenVraag extends Vraag {
      */
     @Override
     public OpenVraag duplicate () {
-        return new OpenVraag(this.text, this.solution, this.weight);
+        return new OpenVraag(text, solution, weight);
     }
 }
